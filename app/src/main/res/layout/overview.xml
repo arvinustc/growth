@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_menu"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:padding="16dp"
+    android:paddingRight="0dp"
+    android:paddingBottom="16dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="left"
+            android:src="@mipmap/book" />
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lesson_name"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/str_books"
+                    android:textColor="@android:color/black"
+                    android:gravity="start" />
+
+                <TextView
+                    android:id="@+id/id_book_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="0 / 0"
+                    android:textColor="@android:color/black"
+                    android:gravity="start"
+                    android:textAlignment="gravity"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/book_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="170dp"
+                    android:layout_height="@dimen/abc_button_inset_horizontal_material"
+                    android:indeterminate="false"
+                    android:progress="0"
+                    android:max="100"
+                    android:layout_gravity="center_vertical"
+                    android:progressDrawable="@drawable/progressbar_lesson" />
+
+                <TextView
+                    android:id="@+id/book_progress_num"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="start"
+                    android:text="50%"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="left"
+            android:src="@mipmap/lesson" />
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/str_lessons"
+                    android:textColor="@android:color/black"
+                    android:gravity="start" />
+
+                <TextView
+                    android:id="@+id/id_lesson_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="0 / 0"
+                    android:textColor="@android:color/black"
+                    android:gravity="start"
+                    android:textAlignment="gravity"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/lesson_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="170dp"
+                    android:layout_height="@dimen/abc_button_inset_horizontal_material"
+                    android:indeterminate="false"
+                    android:progress="0"
+                    android:max="100"
+                    android:layout_gravity="center_vertical"
+                    android:progressDrawable="@drawable/progressbar_lesson" />
+
+                <TextView
+                    android:id="@+id/lesson_progress_num"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="start"
+                    android:text="50%"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="left"
+            android:src="@mipmap/han" />
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/str_hans"
+                    android:textColor="@android:color/black"
+                    android:gravity="start" />
+
+                <TextView
+                    android:id="@+id/id_han_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="0 / 0"
+                    android:textColor="@android:color/black"
+                    android:gravity="start"
+                    android:textAlignment="gravity"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/han_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="170dp"
+                    android:layout_height="@dimen/abc_button_inset_horizontal_material"
+                    android:indeterminate="false"
+                    android:progress="0"
+                    android:max="100"
+                    android:layout_gravity="center_vertical"
+                    android:progressDrawable="@drawable/progressbar_lesson" />
+
+                <TextView
+                    android:id="@+id/han_progress_num"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="start"
+                    android:text="50%"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

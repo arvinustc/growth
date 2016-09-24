@@ -1,0 +1,53 @@
+[
+  { "ID": 97875357642250,
+    "lesson": "第一课",
+    "strings": "人口大中小哭笑一上下爸妈天太月二",
+    "icon" : "lesson"
+  },
+
+  { "ID": 97875357642251,
+    "lesson": "第二课",
+    "strings": "地阳亮星云火水三",
+    "icon" : "lesson" },
+
+  { "ID": 97875357642252,
+    "lesson": "第三课",
+    "strings": "土山石木我好有田",
+    "icon" : "lesson" },
+
+  { "ID": 97875357642253,
+    "lesson": "第四课",
+    "strings": "牛羊聪耳目心和四",
+    "icon" : "lesson" },
+
+  { "ID": 97875357642254,
+    "lesson": "第五课",
+    "strings": "明头眉鼻手花树五",
+    "icon" : "lesson" },
+
+  { "ID": 97875357642255,
+    "lesson": "第六课",
+    "strings": "草叶日风雨的孩六",
+    "icon" : "lesson" },
+
+  { "ID": 97875357642256,
+    "lesson": "第七课",
+    "strings": "白红是家多唱子七",
+    "icon" : "lesson" },
+
+  { "ID": 97875357642257,
+    "lesson": "第八课",
+    "strings": "爱爷奶少歌不朋八",
+    "icon" : "lesson" },
+
+  { "ID": 97875357642258,
+    "lesson": "第九课",
+    "strings": "宝在学书游友儿九",
+    "icon" : "lesson" },
+
+  { "ID": 97875357642259,
+    "lesson": "第十课",
+    "strings": "贝生习看戏字气十",
+    "icon" : "lesson" }
+
+]

@@ -1,0 +1,17 @@
+[
+  { "name": "课本浏览",
+    "file": "json/chinese_books.json",
+    "icon" : "folder" },
+
+  { "name": "课程浏览",
+    "file": "null.json",
+    "icon" : "folder" },
+
+  { "name": "字库浏览",
+    "file": "null.json",
+    "icon" : "folder" },
+
+  { "name": "返回",
+    "file": "null.json",
+    "icon" : "back" }
+]

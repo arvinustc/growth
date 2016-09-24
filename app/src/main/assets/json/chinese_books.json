@@ -1,0 +1,31 @@
+[
+  { "ISBN": 9787535764225,
+    "name": "四五快读 第1册",
+    "file": "book/swkd_1.json",
+    "icon" : "book" },
+
+  { "ISBN": 9787535764232,
+    "name": "四五快读 第2册",
+    "file": "book/swkd_2.json",
+    "icon" : "book" },
+
+  { "ISBN": 9787535764249,
+    "name": "四五快读 第3册",
+    "file": "book/swkd_3.json",
+    "icon" : "book" },
+
+  { "ISBN": 9787535764256,
+    "name": "四五快读 第4册",
+    "file": "book/swkd_4.json",
+    "icon" : "book" },
+
+  { "ISBN": 9787535764263,
+    "name": "四五快读 第5册",
+    "file": "book/swkd_5.json",
+    "icon" : "book" },
+
+  { "ISBN": 9787535764270,
+    "name": "四五快读 第6册",
+    "file": "book/swkd_6.json",
+    "icon" : "book" }
+]

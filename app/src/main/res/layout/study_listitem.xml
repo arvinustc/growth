@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    tools:context=".activity.ChineseActivity"
+    android:focusable="true"
+    android:baselineAligned="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:paddingTop="16dp">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comment_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:gravity="center_horizontal|bottom">
+
+        <TextView
+            android:id="@+id/study_good_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="(0)"
+            android:paddingRight="32dp"/>
+
+        <ImageView
+            android:id="@+id/study_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="32dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/thumb_up"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/study_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/favorite_no" />
+
+        <ImageView
+            android:id="@+id/study_bad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="32dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/thumb_down"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/study_bad_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="(0)"
+            android:paddingLeft="32dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        android:layout_gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:padding="16dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="16dp" >
+
+        <TextView
+            android:id="@+id/study_han_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/study_han_size"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="32dp"
+        android:visibility="visible"
+        android:gravity="center_horizontal|center">
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/study_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:src="@mipmap/left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/study_han_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/study_han_info_size"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/study_han_info_size"
+                android:text=" / "
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/study_han_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/study_han_info_size"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/study_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:src="@mipmap/right" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

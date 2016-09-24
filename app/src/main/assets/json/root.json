@@ -1,0 +1,38 @@
+[
+  { "name": "语文",
+    "file": "json/chinese.json",
+    "icon" : "chinese" },
+
+  { "name": "数学",
+    "file": "null.json",
+    "icon" : "math" },
+
+  { "name": "英语",
+    "file": "null.json",
+    "icon" : "english" },
+
+  { "name": "物理",
+    "file": "null.json",
+    "icon" : "physics" },
+
+  { "name": "化学",
+    "file": "null.json",
+    "icon" : "chemistry" },
+
+  { "name": "历史",
+    "file": "null.json",
+    "icon" : "history" },
+
+  { "name": "生物",
+    "file": "null.json",
+    "icon" : "biology" },
+
+  { "name": "地理",
+    "file": "null.json",
+    "icon" : "geography" },
+
+  { "name": "退出",
+    "file": "null.json",
+    "icon" : "exit" }
+
+]
