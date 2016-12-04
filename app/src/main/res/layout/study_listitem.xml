@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#ffffff"
-    tools:context=".activity.ChineseActivity"
+    tools:context=".activity.RootActivity"
     android:focusable="true"
     android:baselineAligned="true">
 
@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_gravity="center"
-        android:paddingTop="16dp">
+        android:paddingTop="0dp">
 
 
     </LinearLayout>
@@ -73,18 +73,19 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="380dp"
+        android:layout_height="260dp"
         android:layout_gravity="center"
         android:paddingLeft="16dp"
-        android:paddingTop="16dp"
-        android:padding="16dp"
-        android:paddingRight="0dp"
-        android:paddingBottom="16dp" >
+        android:paddingTop="8dp"
+        android:padding="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp" >
 
         <TextView
             android:id="@+id/study_han_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="田"
             android:textSize="@dimen/study_han_size"
             android:layout_gravity="center"
             android:textColor="@android:color/black" />
@@ -94,7 +95,7 @@
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="32dp"
+        android:paddingTop="0dp"
         android:visibility="visible"
         android:gravity="center_horizontal|center">
 
@@ -111,7 +112,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="260dp"
+            android:layout_width="460dp"
             android:gravity="center_horizontal"
             android:layout_height="wrap_content">
             <TextView
@@ -127,7 +128,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
                 android:textSize="@dimen/study_han_info_size"
-                android:text=" / "
+                android:text="0 / 0"
                 android:textColor="@android:color/black" />
 
             <TextView
