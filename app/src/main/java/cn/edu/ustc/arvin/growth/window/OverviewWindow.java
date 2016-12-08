@@ -77,8 +77,8 @@ public class OverviewWindow extends PopupWindow implements View.OnClickListener 
             mTextViewHanProgress.setText((int) (100*mOverviewInfo.getHanDone() / mOverviewInfo.getHanAll()) + "%");
         }
 
-        this.setWidth(width);
-        this.setHeight(height/2);
+        this.setWidth(width/2);
+        this.setHeight(height);
 
         this.setFocusable(true);
         this.setOutsideTouchable(true);

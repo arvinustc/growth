@@ -10,18 +10,16 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-import com.amazing.growth.R;
-import com.amazing.growth.chinese.ChineseThread;
-import com.amazing.growth.chinese.ChineseHandler;
-import com.amazing.growth.chinese.BookWindow;
-import com.amazing.growth.chinese.HanWindow;
-import com.amazing.growth.chinese.LessonWindow;
-import com.amazing.growth.chinese.OverviewWindow;
-import com.amazing.growth.chinese.StudyWindow;
-import com.amazing.growth.model.Filter;
-import com.amazing.growth.model.Menu;
-import com.amazing.growth.model.MenuItem;
-import com.amazing.growth.view.MenuItemAdapter;
+import cn.edu.ustc.arvin.growth.R;
+import cn.edu.ustc.arvin.growth.window.BookWindow;
+import cn.edu.ustc.arvin.growth.window.HanWindow;
+import cn.edu.ustc.arvin.growth.window.LessonWindow;
+import cn.edu.ustc.arvin.growth.window.OverviewWindow;
+import cn.edu.ustc.arvin.growth.window.StudyWindow;
+import cn.edu.ustc.arvin.growth.model.Filter;
+import cn.edu.ustc.arvin.growth.model.Menu;
+import cn.edu.ustc.arvin.growth.model.MenuItem;
+import cn.edu.ustc.arvin.growth.view.MenuItemAdapter;
 
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
@@ -102,7 +100,7 @@ public class ChineseActivity extends AppCompatActivity implements AdapterView.On
             hw.show(root);
         } else if (menuItem.getName().equals("学习")) {
             View root = view.getRootView();
-            StudyWindow sw = new StudyWindow(this, new Filter(Filter.FILTER_NEW),root.getWidth(), root.getHeight());
+            StudyWindow sw = new StudyWindow(this, new Filter(Filter.FILTER_ALL),root.getWidth(), root.getHeight());
             sw.show(root);
         } else if (menuItem.getName().equals("喜爱")) {
             View root = view.getRootView();

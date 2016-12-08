@@ -96,7 +96,7 @@ public class ChineseHandler extends Handler {
         Han h = mRealm.where(Han.class).equalTo("text", text).findFirst();
 
         mRealm.beginTransaction();
-        h.GOOD();
+        h.increase();
         if (h.getGood() == 5) {
             if (h.getLesson().isReady(1)) {
                 h.getBook().isReady(1);
@@ -112,7 +112,7 @@ public class ChineseHandler extends Handler {
         Han h = mRealm.where(Han.class).equalTo("text", text).findFirst();
 
         mRealm.beginTransaction();
-        h.BAD();
+        h.decrease();
         mRealm.copyToRealmOrUpdate(h);
         mRealm.commitTransaction();
         Log.i(TAG, "bad " + h);
@@ -123,7 +123,7 @@ public class ChineseHandler extends Handler {
         Han h = mRealm.where(Han.class).equalTo("text", text).findFirst();
 
         mRealm.beginTransaction();
-        h.FAVORITE(group);
+        h.favorite(group);
         mRealm.copyToRealmOrUpdate(h);
         mRealm.commitTransaction();
         Log.i(TAG, "favorite " + h + " into group " + group);
@@ -134,7 +134,7 @@ public class ChineseHandler extends Handler {
         Han h = mRealm.where(Han.class).equalTo("text", text).findFirst();
 
         mRealm.beginTransaction();
-        h.UNFAVORITE();
+        h.unfavorite();
         mRealm.copyToRealmOrUpdate(h);
         mRealm.commitTransaction();
         Log.i(TAG, "unfavorite " + h);

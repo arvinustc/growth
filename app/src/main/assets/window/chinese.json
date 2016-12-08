@@ -1,0 +1,58 @@
+[
+  { "name": "导入",
+    "file": "json/chinese_books.json",
+    "icon" : "uncompress" },
+
+  { "name": "课本",
+    "file": "null.json",
+    "icon" : "book" },
+
+  { "name": "课程",
+    "file": "null.json",
+    "icon" : "lesson" },
+
+  { "name": "汉字",
+    "file": "null.json",
+    "icon" : "han" },
+
+  { "name": "学习",
+    "file": "null.json",
+    "icon" : "learning" },
+
+  { "name": "喜爱",
+    "file": "null.json",
+    "icon" : "favorite" },
+
+  { "name": "任务",
+    "file": "null.json",
+    "icon" : "check" },
+
+  { "name": "统计",
+    "file": "null.json",
+    "icon" : "chart" },
+
+  { "name": "奖章",
+    "file": "null.json",
+    "icon" : "winner" },
+
+  { "name": "记录",
+    "file": "null.json",
+    "icon" : "date" },
+
+  { "name": "设置",
+    "file": "json/chinese_setting.json",
+    "icon" : "setting" },
+
+  { "name": "上传",
+  "file": "null.json",
+  "icon" : "upload" },
+
+  { "name": "帮助",
+    "file": "null.json",
+    "icon" : "info" },
+
+  { "name": "返回",
+    "file": "null.json",
+    "icon" : "back" }
+
+]

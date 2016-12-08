@@ -82,7 +82,7 @@ public class BookAdapter extends BaseAdapter {
 
         if (book != null) {
             ((ImageView) convertView.findViewById(R.id.lesson_icon)).setImageResource(getRscId(book.getIcon()));
-            ((TextView) convertView.findViewById(R.id.lesson_name)).setText(book.getName());
+            ((TextView) convertView.findViewById(R.id.han_name)).setText(book.getName());
         }
 
         return convertView;

@@ -19,12 +19,11 @@ public class Filter extends RealmObject {
     private int index;
 
     public static int FILTER_ALL = 0x00000001;
-    public static int FILTER_FAVORITE = 0x00000002;
-    public static int FILTER_BOOK = 0x00000003;
-    public static int FILTER_LESSON = 0x00000004;
-    public static int FILTER_NEW = 0x00000005;
-    public static int FILTER_DONE = 0x00000006;
-
+    public static int FILTER_DONE = 0x00000002;
+    public static int FILTER_NEW = 0x00000003;
+    public static int FILTER_FAVORITE = 0x00000004;
+    public static int FILTER_BOOK = 0x00000005;
+    public static int FILTER_LESSON = 0x00000006;
 
     public Book getBook() {
         return book;

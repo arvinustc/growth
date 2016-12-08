@@ -52,18 +52,18 @@ public class HanAdapter extends BaseAdapter {
     }
 
     private int getRscId(int progress) {
-        int rscId = R.mipmap.progress_0;
+        int rscId = R.mipmap.num_0;
 
         if (progress >= 100) {
-            rscId = R.mipmap.progress_4;
+            rscId = R.mipmap.num_4;
         } else if (progress >= 75) {
-            rscId = R.mipmap.progress_3;
+            rscId = R.mipmap.num_3;
         } else if (progress >= 50) {
-            rscId = R.mipmap.progress_2;
+            rscId = R.mipmap.num_2;
         } else if (progress >= 25) {
-            rscId = R.mipmap.progress_1;
+            rscId = R.mipmap.num_1;
         } else if (progress >= 0) {
-            rscId = R.mipmap.progress_0;
+            rscId = R.mipmap.num_0;
         }
 
         return rscId;

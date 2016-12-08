@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import cn.edu.ustc.arvin.growth.R;
-import com.amazing.growth.model.MenuItem;
+import cn.edu.ustc.arvin.growth.model.MenuItem;
 
 import java.lang.reflect.Field;
 import java.util.List;

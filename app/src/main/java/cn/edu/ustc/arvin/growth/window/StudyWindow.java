@@ -13,9 +13,12 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import cn.edu.ustc.arvin.growth.R;
-import com.amazing.growth.activity.ChineseActivity;
-import com.amazing.growth.model.Filter;
+import cn.edu.ustc.arvin.growth.model.Filter;
 import cn.edu.ustc.arvin.growth.model.Han;
+import cn.edu.ustc.arvin.growth.service.Request;
+import cn.edu.ustc.arvin.growth.service.Result;
+import cn.edu.ustc.arvin.growth.service.Service;
+import cn.edu.ustc.arvin.growth.service.ServiceManager;
 import cn.edu.ustc.arvin.growth.view.ViewListener;
 
 import io.realm.Realm;
@@ -44,17 +47,17 @@ public class StudyWindow extends PopupWindow implements View.OnClickListener{
     private TextView mTextViewHan = null;
     private TextView mTextViewHanIndex = null;
     private TextView mTextViewHanCount = null;
-    private ImageView mImageViewGood = null;
-    private ImageView mImageViewBad = null;
+
     private TextView mTextViewGoodCount = null;
     private TextView mTextViewBadCount = null;
     private ImageView mImageViewFavorivate = null;
-    private ImageView mImageViewLeft = null;
-    private ImageView mImageViewRight = null;
     private Filter mFilter = null;
+    private Service mServiceData;
 
 
     public StudyWindow(Context context, Filter filter, int width, int height) {
+        ImageView iv;
+
         mFilter = filter;
 
         mContentView = LayoutInflater.from(context).inflate(
@@ -65,10 +68,14 @@ public class StudyWindow extends PopupWindow implements View.OnClickListener{
 
         filterHans();
 
-        if (context instanceof ChineseActivity) {
-            mTypefaceKaiti = ((ChineseActivity) context).getTypefaceByType("楷体");
-            mTypefaceXiaozhuan = ((ChineseActivity) context).getTypefaceByType("小篆");
-        }
+        Service sf = ServiceManager.getInstance().getService(ServiceManager.SERVICE_FONT, context);
+        mServiceData = ServiceManager.getInstance().getService(ServiceManager.SERVICE_DATA, context);
+
+        Result ret = sf.process(new Request(Request.FETCH, "楷体"));
+        mTypefaceKaiti = (Typeface) ret.getReply();
+
+        ret = sf.process(new Request(Request.FETCH, "小篆"));
+        mTypefaceXiaozhuan = (Typeface) ret.getReply();
 
         mTextViewHanIndex = (TextView) mContentView.findViewById(R.id.study_han_index);
         mTextViewHanCount = (TextView) mContentView.findViewById(R.id.study_han_count);
@@ -76,17 +83,20 @@ public class StudyWindow extends PopupWindow implements View.OnClickListener{
         mTextViewGoodCount = (TextView) mContentView.findViewById(R.id.study_good_count);
         mTextViewBadCount = (TextView) mContentView.findViewById(R.id.study_bad_count);
 
-        mImageViewGood = (ImageView) mContentView.findViewById(R.id.study_good);
-        mImageViewBad = (ImageView) mContentView.findViewById(R.id.study_bad);
-        mImageViewFavorivate = (ImageView) mContentView.findViewById(R.id.study_favorite);
-        mImageViewGood.setOnClickListener(this);
-        mImageViewBad.setOnClickListener(this);
-        mImageViewFavorivate.setOnClickListener(this);
+        iv = (ImageView) mContentView.findViewById(R.id.study_good);
+        iv.setOnClickListener(this);
 
-        mImageViewLeft = (ImageView) mContentView.findViewById(R.id.study_left);
-        mImageViewRight = (ImageView) mContentView.findViewById(R.id.study_right);
-        mImageViewLeft.setOnClickListener(this);
-        mImageViewRight.setOnClickListener(this);
+        iv = (ImageView) mContentView.findViewById(R.id.study_bad);
+        iv.setOnClickListener(this);
+
+        iv = (ImageView) mContentView.findViewById(R.id.study_favorite);
+        iv.setOnClickListener(this);
+
+        iv = (ImageView) mContentView.findViewById(R.id.study_left);
+        iv.setOnClickListener(this);
+
+        iv = (ImageView) mContentView.findViewById(R.id.study_right);
+        iv.setOnClickListener(this);
 
         mTextViewHan = (TextView) mContentView.findViewById(R.id.study_han_text);
         mTextViewHan.setTypeface(mIsKai ? mTypefaceKaiti : mTypefaceXiaozhuan);
@@ -110,7 +120,7 @@ public class StudyWindow extends PopupWindow implements View.OnClickListener{
     }
 
     public StudyWindow(Context context, int width, int height) {
-        this(context,  new Filter(), width, height);
+        this(context, new Filter(), width, height);
     }
 
     private void filterHans() {
@@ -150,34 +160,37 @@ public class StudyWindow extends PopupWindow implements View.OnClickListener{
         }
     }
 
-    private void commentHan(String text, String good, String group) {
-        if (mContext instanceof ChineseActivity) {
-            ((ChineseActivity) mContext).commentHan(text, good, group);
-        }
-    }
-
-    private void commentHan(String text, String good) {
-        if (mContext instanceof ChineseActivity) {
-            ((ChineseActivity) mContext).commentHan(text, good);
+    private Result request(int action, String text, String group) {
+        if ( null != text
+                && action > Request.EMPTY
+                && action < Request.MAX) {
+            Request r = new Request();
+            r.setAction(action);
+            r.setData(text);
+            r.setGroup(group);
+            return mServiceData.process(r);
+        } else {
+            return null;
         }
     }
 
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.study_good) {
-            Log.i(TAG, "comment text=" + mHanCurrent.getText() + " good.");
-            commentHan(mHanCurrent.getText(), "good");
+            Log.i(TAG, "increase text=" + mHanCurrent.getText());
+            request(Request.INCREASE, mHanCurrent.getText(), null);
         } else if (v.getId() == R.id.study_bad) {
-            Log.i(TAG, "comment text=" + mHanCurrent.getText() + " bad.");
-            commentHan(mHanCurrent.getText(), "bad");
+            Log.i(TAG, "decrease text=" + mHanCurrent.getText());
+            request(Request.DECREASE, mHanCurrent.getText(), null);
         } else if (v.getId() == R.id.study_favorite) {
             if (mFilter.getID() != Filter.FILTER_FAVORITE) {
-                Log.i(TAG, "comment text=" + mHanCurrent.getText() + " favorite.");
                 if (null == mHanCurrent.getFavorite()) {
-                    commentHan(mHanCurrent.getText(), "favorite", "喜爱");
+                    Log.i(TAG, "favorite text=" + mHanCurrent.getText());
+                    request(Request.FAVORITE, mHanCurrent.getText(), "favorite");
                     mImageViewFavorivate.setImageResource(R.mipmap.favorite_yes);
                 } else {
-                    commentHan(mHanCurrent.getText(), "unfavorite");
+                    Log.i(TAG, "unfavorite text=" + mHanCurrent.getText());
+                    request(Request.UNFAVORITE, mHanCurrent.getText(), null);
                     mImageViewFavorivate.setImageResource(R.mipmap.favorite_no);
                 }
                 v.getRootView().invalidate();

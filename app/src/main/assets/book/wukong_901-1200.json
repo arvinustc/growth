@@ -1,0 +1,301 @@
+[
+  { "ID": 1200401,
+    "lesson": "第1组",
+    "strings": "淡诚赢赞招翻",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200402,
+    "lesson": "第2组",
+    "strings": "浇肥饿挑担狮",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200403,
+    "lesson": "第3组",
+    "strings": "滚扑咬懒吞靠",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200404,
+    "lesson": "第4组",
+    "strings": "应餐丢矿槽糕",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200405,
+    "lesson": "第5组",
+    "strings": "粗概夹盆宣芽",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200406,
+    "lesson": "第6组",
+    "strings": "规盛丝表煮饼",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200407,
+    "lesson": "第7组",
+    "strings": "饮饺狼初眉辨",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200408,
+    "lesson": "第8组",
+    "strings": "斗即雁归寒姑",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200409,
+    "lesson": "第9组",
+    "strings": "娘蚜盼啄斑俩",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200410,
+    "lesson": "第10组",
+    "strings": "摘伯而且踢兰",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200411,
+    "lesson": "第11组",
+    "strings": "梁程波架特砖",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200412,
+    "lesson": "第12组",
+    "strings": "薄巧稳郊弄断",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200413,
+    "lesson": "第13组",
+    "strings": "修创梦灰迎姨",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200414,
+    "lesson": "第14组",
+    "strings": "追顶披鼓甘埋",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200415,
+    "lesson": "第15组",
+    "strings": "闯掰跌轻蚂谢",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200416,
+    "lesson": "第16组",
+    "strings": "矮阿勺叉艺内",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200417,
+    "lesson": "第17组",
+    "strings": "币爪反丹忆计",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200418,
+    "lesson": "第18组",
+    "strings": "订孔玉功扔仙",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200419,
+    "lesson": "第19组",
+    "strings": "印册汁汉宁必",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200420,
+    "lesson": "第20组",
+    "strings": "永寺考死当吸",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200421,
+    "lesson": "第21组",
+    "strings": "吐肉则乒乓讲",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200422,
+    "lesson": "第22组",
+    "strings": "农孙戒坏严劳",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200423,
+    "lesson": "第23组",
+    "strings": "县呆困吵兵乱",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200424,
+    "lesson": "第24组",
+    "strings": "邻龟良识词努",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200425,
+    "lesson": "第25组",
+    "strings": "驴茄卧枣卖轮",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200426,
+    "lesson": "第26组",
+    "strings": "叔齿味典败钓",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200427,
+    "lesson": "第27组",
+    "strings": "乖侄斧饱闹炉",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200428,
+    "lesson": "第28组",
+    "strings": "宝肩衬姓组挡",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200429,
+    "lesson": "第29组",
+    "strings": "指茶荣药枯柿",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200430,
+    "lesson": "第30组",
+    "strings": "咸厘省胃贵思",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200431,
+    "lesson": "第31组",
+    "strings": "骂哈峡骨钥匙",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200432,
+    "lesson": "第32组",
+    "strings": "科便须剑独奖",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200433,
+    "lesson": "第33组",
+    "strings": "类爆炸炮洁派",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200434,
+    "lesson": "第34组",
+    "strings": "洲客神诵骆驼",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200435,
+    "lesson": "第35组",
+    "strings": "蚕盐壶恐桔唇",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200436,
+    "lesson": "第36组",
+    "strings": "套柴党晓晃峰",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200437,
+    "lesson": "第37组",
+    "strings": "乘秘臭射舱航",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200438,
+    "lesson": "第38组",
+    "strings": "豹胸脏舵桨留",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200439,
+    "lesson": "第39组",
+    "strings": "瓷旅阅粉拳烛",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200440,
+    "lesson": "第40组",
+    "strings": "酒浮浪朗扇菌",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200441,
+    "lesson": "第41组",
+    "strings": "葡萄菊菇雀梨",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200442,
+    "lesson": "第42组",
+    "strings": "笛第舶盒鸽脖",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200443,
+    "lesson": "第43组",
+    "strings": "够猎猜麻粒剪",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200444,
+    "lesson": "第44组",
+    "strings": "兽渔寄弹超棍",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200445,
+    "lesson": "第45组",
+    "strings": "棒厨港富裤粥",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200446,
+    "lesson": "第46组",
+    "strings": "磁酸蜡蕉醋箱",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200447,
+    "lesson": "第47组",
+    "strings": "箭鲨操鹦鹉鲸",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200448,
+    "lesson": "第48组",
+    "strings": "糖瞧蟋蟀繁鳄",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200449,
+    "lesson": "第49组",
+    "strings": "鞭警察螃蟹瀑",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200450,
+    "lesson": "第50组",
+    "strings": "器蔬横竖钩撇",
+    "icon" : "lesson"
+  }
+]

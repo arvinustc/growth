@@ -1,21 +1,25 @@
 package cn.edu.ustc.arvin.growth.window;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import cn.edu.ustc.arvin.growth.R;
-import cn.edu.ustc.arvin.growth.model.Lesson;
+import cn.edu.ustc.arvin.growth.model.Han;
 
 import java.lang.reflect.Field;
 import java.util.List;
 
+import cn.edu.ustc.arvin.growth.service.Request;
+import cn.edu.ustc.arvin.growth.service.Result;
+import cn.edu.ustc.arvin.growth.service.Service;
+import cn.edu.ustc.arvin.growth.service.ServiceManager;
 import io.realm.RealmResults;
 
 /**
@@ -25,31 +29,38 @@ public class LessonAdapter extends BaseAdapter {
     private static final String TAG = "LessonAdapter";
     private static final String ASSET_PATH = "file:///android_asset/";
     private LayoutInflater inflater;
-    private List<Lesson> mLessons = null;
+    private List<Han> mHans = null;
     private ProgressBar mProgrssBar;
+    private Typeface mTypefaceKaiti = null;
+    private Typeface mTypefaceXiaozhuan = null;
 
     public LessonAdapter(Context context) {
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        Service sf = ServiceManager.getInstance().getService(ServiceManager.SERVICE_FONT, context);
+        Result ret = sf.process(new Request(Request.FETCH, "楷体"));
+        mTypefaceKaiti = (Typeface) ret.getReply();
+        ret = sf.process(new Request(Request.FETCH, "小篆"));
+        mTypefaceXiaozhuan = (Typeface) ret.getReply();
     }
 
-    public void setData(RealmResults<Lesson> lessons) {
-        this.mLessons = lessons;
+    public void setData(RealmResults<Han> hans) {
+        this.mHans = hans;
     }
 
     @Override
     public int getCount() {
-        if (mLessons == null) {
+        if (mHans == null) {
             return 0;
         }
-        return mLessons.size();
+        return mHans.size();
     }
 
     @Override
     public Object getItem(int position) {
-        if (mLessons == null || mLessons.get(position) == null) {
+        if (mHans == null || mHans.get(position) == null) {
             return null;
         }
-        return mLessons.get(position);
+        return mHans.get(position);
     }
 
     @Override
@@ -82,14 +93,13 @@ public class LessonAdapter extends BaseAdapter {
             convertView = inflater.inflate(R.layout.lesson_listitem, parent, false);
         }
 
-        Lesson lesson = mLessons.get(position);
+        Han h = mHans.get(position);
 
-        if (lesson != null) {
-            ((ImageView) convertView.findViewById(R.id.lesson_icon)).setImageResource(getRscId(lesson.getIcon()));
-            ((TextView) convertView.findViewById(R.id.lesson_name)).setText(lesson.getLesson());
-            ((TextView) convertView.findViewById(R.id.book_name)).setText(lesson.getBook().getName());
-            ((ProgressBar)convertView.findViewById(R.id.lesson_progress)).setProgress(lesson.getProgress());
-            ((TextView) convertView.findViewById(R.id.lesson_progress_num)).setText(String.valueOf(lesson.getProgress())+"%");
+        if (h != null) {
+            ((TextView) convertView.findViewById(R.id.han_name)).setText(h.getText());
+            ((TextView) convertView.findViewById(R.id.han_name)).setTypeface(mTypefaceKaiti);
+            ((ProgressBar)convertView.findViewById(R.id.han_progress)).setProgress(h.getProgress());
+            ((TextView) convertView.findViewById(R.id.han_progress_num)).setText(String.valueOf(h.getProgress())+"%");
         }
 
         return convertView;

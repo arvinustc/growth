@@ -9,7 +9,7 @@ import android.widget.GridView;
 import android.widget.PopupWindow;
 
 import cn.edu.ustc.arvin.growth.R;
-import com.amazing.growth.model.Menu;
+import cn.edu.ustc.arvin.growth.model.Menu;
 
 /**
  * Created by amazing on 2016/4/9.

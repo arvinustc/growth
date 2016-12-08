@@ -106,7 +106,7 @@ public class Lesson extends RealmObject {
         this.ID = ID;
     }
 
-    public String getLesson() {
+    public String getName() {
         return lesson;
     }
 

@@ -118,7 +118,7 @@ public class Han extends RealmObject {
                 '}';
     }
 
-    public void GOOD() {
+    public void increase() {
         good++;
         if (good <= 5) {
             progress = good * 20;
@@ -136,11 +136,11 @@ public class Han extends RealmObject {
         }
     }
 
-    public void BAD() {
+    public void decrease() {
         bad++;
     }
 
-    public void FAVORITE(String group) { favorite = group;}
+    public void favorite(String group) { favorite = group;}
 
-    public void UNFAVORITE() { favorite = null;}
+    public void unfavorite() { favorite = null;}
 }

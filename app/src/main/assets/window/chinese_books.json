@@ -1,0 +1,22 @@
+[
+  { "ISBN": 1200100,
+    "name": "悟空识字 1-300",
+    "file": "book/wukong_1-300.json",
+    "icon" : "book" },
+
+  { "ISBN": 1200200,
+    "name": "悟空识字 301-600",
+    "file": "book/wukong_301-600.json",
+    "icon" : "book" },
+
+  { "ISBN": 1200300,
+    "name": "悟空识字 601-900",
+    "file": "book/wukong_601-900.json",
+    "icon" : "book" },
+
+  { "ISBN": 1200400,
+    "name": "悟空识字 901-1200",
+    "file": "book/wukong_901-1200.json",
+    "icon" : "book" }
+
+]

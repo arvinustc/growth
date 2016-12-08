@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ffffff"
-    tools:context=".activity.ChineseActivity"
+    tools:context=".activity.RootActivity"
     android:focusable="true"
     android:baselineAligned="true">
 

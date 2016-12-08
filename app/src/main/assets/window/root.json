@@ -1,0 +1,46 @@
+[
+  { "name": "课程",
+    "file": "json/chinese.json",
+    "icon" : "browser" },
+
+  { "name": "学习",
+    "file": "null.json",
+    "icon" : "learning" },
+
+  { "name": "复习",
+    "file": "null.json",
+    "icon" : "review" },
+
+  { "name": "生字",
+  "file": "null.json",
+  "icon" : "bookmark" },
+
+  { "name": "导入",
+    "file": "window/chinese_books.json",
+    "icon" : "uncompress" },
+
+  { "name": "统计",
+    "file": "null.json",
+    "icon" : "chart" },
+
+  { "name": "奖章",
+    "file": "null.json",
+    "icon" : "winner" },
+
+  { "name": "上传",
+    "file": "null.json",
+    "icon" : "upload" },
+
+  { "name": "设置",
+    "file": "null.json",
+    "icon" : "setting" },
+
+  { "name": "关于",
+    "file": "null.json",
+    "icon" : "info" },
+
+  { "name": "退出",
+    "file": "null.json",
+    "icon" : "exit" }
+
+]

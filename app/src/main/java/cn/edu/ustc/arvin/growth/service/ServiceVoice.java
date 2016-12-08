@@ -13,10 +13,46 @@ import com.iflytek.cloud.SynthesizerListener;
 /**
  * Created by amazing on 2016/9/29.
  */
-public class ServiceVoice {
+public class ServiceVoice extends Service {
     private static String TAG = "ServiceVoice";
     private boolean mInit = false;
     private SpeechSynthesizer mTTS = null;
+
+    private static Context sContext = null;
+    private static ServiceVoice sServiceVoice = null;
+
+    public static synchronized ServiceVoice createInstance(Context context) {
+        if (context == null) {
+            throw new IllegalArgumentException("Invalid context argument");
+        }
+        sContext = context;
+        return getInstance();
+    }
+
+    public static synchronized ServiceVoice getInstance() {
+        if (null == sServiceVoice) {
+            sServiceVoice = new ServiceVoice(sContext);
+        }
+        return sServiceVoice;
+    }
+
+    private ServiceVoice(Context context) {
+        super();
+
+        Log.i(TAG, "new ServiceVoice");
+
+        SpeechUtility.createUtility(context, SpeechConstant.APPID + "=57df9552");
+
+        mTTS = SpeechSynthesizer.createSynthesizer(context, null);
+        mTTS.setParameter(SpeechConstant.VOICE_NAME, "vixf");
+        mTTS.setParameter(SpeechConstant.SPEED, "50");
+        mTTS.setParameter(SpeechConstant.VOLUME, "80");
+        mTTS.setParameter(SpeechConstant.ENGINE_TYPE, SpeechConstant.TYPE_CLOUD);
+        //mTTS.startSpeaking("汉字启蒙", mSynListener);
+
+        mInit = true;
+    }
+
 
     private SynthesizerListener mSynListener = new SynthesizerListener() {
 
@@ -49,21 +85,6 @@ public class ServiceVoice {
         }
 
     };
-
-    public ServiceVoice(Context context) {
-        Log.i(TAG, "new ServiceVoice");
-
-        SpeechUtility.createUtility(context, SpeechConstant.APPID + "=57df9552");
-
-        mTTS = SpeechSynthesizer.createSynthesizer(context, null);
-        mTTS.setParameter(SpeechConstant.VOICE_NAME, "vixf");
-        mTTS.setParameter(SpeechConstant.SPEED, "50");
-        mTTS.setParameter(SpeechConstant.VOLUME, "80");
-        mTTS.setParameter(SpeechConstant.ENGINE_TYPE, SpeechConstant.TYPE_CLOUD);
-        //mTTS.startSpeaking("汉字启蒙", mSynListener);
-
-        mInit = true;
-    }
 
     public void speak(String text) {
         if (mInit) {

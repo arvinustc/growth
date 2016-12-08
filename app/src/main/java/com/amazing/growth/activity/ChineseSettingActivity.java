@@ -7,14 +7,14 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-import com.amazing.growth.R;
-import com.amazing.growth.chinese.BookImportWindow;
-import com.amazing.growth.chinese.HanWindow;
-import com.amazing.growth.chinese.LessonWindow;
-import com.amazing.growth.model.Menu;
-import com.amazing.growth.model.MenuItem;
-import com.amazing.growth.view.MenuItemAdapter;
-import com.amazing.growth.view.PopupMenuView;
+import cn.edu.ustc.arvin.growth.R;
+import cn.edu.ustc.arvin.growth.window.BookImportWindow;
+import cn.edu.ustc.arvin.growth.window.HanWindow;
+import cn.edu.ustc.arvin.growth.window.LessonWindow;
+import cn.edu.ustc.arvin.growth.model.Menu;
+import cn.edu.ustc.arvin.growth.model.MenuItem;
+import cn.edu.ustc.arvin.growth.view.MenuItemAdapter;
+import cn.edu.ustc.arvin.growth.view.PopupMenuView;
 
 public class ChineseSettingActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private static final String TAG = "ChineseSettingActivity";

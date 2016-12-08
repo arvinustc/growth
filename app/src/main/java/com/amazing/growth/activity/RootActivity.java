@@ -7,11 +7,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import com.amazing.growth.model.Menu;
+import cn.edu.ustc.arvin.growth.model.Menu;
 
-import com.amazing.growth.R;
-import com.amazing.growth.model.MenuItem;
-import com.amazing.growth.view.MenuItemAdapter;
+import cn.edu.ustc.arvin.growth.R;
+import cn.edu.ustc.arvin.growth.model.MenuItem;
+import cn.edu.ustc.arvin.growth.view.MenuItemAdapter;
 
 public class RootActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     private static final String TAG = "RootActivity";

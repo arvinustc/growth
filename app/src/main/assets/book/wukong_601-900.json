@@ -1,0 +1,301 @@
+[
+  { "ID": 1200301,
+    "lesson": "第1组",
+    "strings": "穿暖低更能呢",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200302,
+    "lesson": "第2组",
+    "strings": "吧您吗呀啦睡",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200303,
+    "lesson": "第3组",
+    "strings": "怎啊复苏舞冰",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200304,
+    "lesson": "第4组",
+    "strings": "泉鸣醒雷澡软",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200305,
+    "lesson": "第5组",
+    "strings": "梳梢耍论趣底",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200306,
+    "lesson": "第6组",
+    "strings": "颜淋洒滴油邓",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200307,
+    "lesson": "第7组",
+    "strings": "植龄经息扶载",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200308,
+    "lesson": "第8组",
+    "strings": "诗眠居醉烟散",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200309,
+    "lesson": "第9组",
+    "strings": "评访挤邮局轿",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200310,
+    "lesson": "第10组",
+    "strings": "钱懂貌愿碗筷",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200311,
+    "lesson": "第11组",
+    "strings": "夸妙却掉换员",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200312,
+    "lesson": "第12组",
+    "strings": "音蹈胖喜刚贴",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200313,
+    "lesson": "第13组",
+    "strings": "墙替拖鞋帮棉",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200314,
+    "lesson": "第14组",
+    "strings": "晒盖脱躺睛摆",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200315,
+    "lesson": "第15组",
+    "strings": "帘背另顾病累",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200316,
+    "lesson": "第16组",
+    "strings": "悄离票元旦篇",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200317,
+    "lesson": "第17组",
+    "strings": "遍雾霜朝霞夕",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200318,
+    "lesson": "第18组",
+    "strings": "蝶蜂碧紫杨凉",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200319,
+    "lesson": "第19组",
+    "strings": "定捧连仿佛抬",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200320,
+    "lesson": "第20组",
+    "strings": "聪泼忽然眨如",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200321,
+    "lesson": "第21组",
+    "strings": "以鹿慢鼻脑袋",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200322,
+    "lesson": "第22组",
+    "strings": "怪辆久失观围",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200323,
+    "lesson": "第23组",
+    "strings": "准备双舌页弓",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200324,
+    "lesson": "第24组",
+    "strings": "秒炒蜻蜓展蝴",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200325,
+    "lesson": "第25组",
+    "strings": "蚯蚓蝌蚪蜘蛛",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200326,
+    "lesson": "第26组",
+    "strings": "牧捕蝉惜柔露",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200327,
+    "lesson": "第27组",
+    "strings": "荷珠摇篮晶停",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200328,
+    "lesson": "第28组",
+    "strings": "坪透翅膀蹲嘻",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200329,
+    "lesson": "第29组",
+    "strings": "莲睁趴腰爬非",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200330,
+    "lesson": "第30组",
+    "strings": "感激急坡割闷",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200331,
+    "lesson": "第31组",
+    "strings": "喊潮湿搬阵哗",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200332,
+    "lesson": "第32组",
+    "strings": "壁虎借蚊逃难",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200333,
+    "lesson": "第33组",
+    "strings": "擦抄拾摔拨拦",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200334,
+    "lesson": "第34组",
+    "strings": "摸团遇攻互尊",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200335,
+    "lesson": "第35组",
+    "strings": "令纯挂街熟尝",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200336,
+    "lesson": "第36组",
+    "strings": "温冻该因季鸦",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200337,
+    "lesson": "第37组",
+    "strings": "喝渴法渐假缸",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200338,
+    "lesson": "第38组",
+    "strings": "慌使劲砸破救",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200339,
+    "lesson": "第39组",
+    "strings": "称官腿柱杆秤",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200340,
+    "lesson": "第40组",
+    "strings": "倒艘沉止微瘦",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200341,
+    "lesson": "第41组",
+    "strings": "暗丑闲旧鸥滩",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200342,
+    "lesson": "第42组",
+    "strings": "舰帆秧稻塘溪",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200343,
+    "lesson": "第43组",
+    "strings": "竿铜号挖井导",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200344,
+    "lesson": "第44组",
+    "strings": "革命士解刻念",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200345,
+    "lesson": "第45组",
+    "strings": "助哨敌荡顺突",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200346,
+    "lesson": "第46组",
+    "strings": "枪杀害英雄冲",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200347,
+    "lesson": "第47组",
+    "strings": "部宽捡壳奔密",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200348,
+    "lesson": "第48组",
+    "strings": "匹祝贺希祖由",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200349,
+    "lesson": "第49组",
+    "strings": "羽丰勇敢理敬",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200350,
+    "lesson": "第50组",
+    "strings": "申句兄虚骄傲",
+    "icon" : "lesson"
+  }
+]

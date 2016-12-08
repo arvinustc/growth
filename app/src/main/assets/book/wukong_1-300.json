@@ -1,0 +1,301 @@
+[
+  { "ID": 1200101,
+    "lesson": "第1组",
+    "strings": "云日月山水田",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200102,
+    "lesson": "第2组",
+    "strings": "虫牛鸟鱼马鸭",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200103,
+    "lesson": "第3组",
+    "strings": "一二三四五十",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200104,
+    "lesson": "第4组",
+    "strings": "上下大小少中",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200105,
+    "lesson": "第5组",
+    "strings": "人耳牙口手女",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200106,
+    "lesson": "第6组",
+    "strings": "六七八九不个",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200107,
+    "lesson": "第7组",
+    "strings": "红灯妈白车门",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200108,
+    "lesson": "第8组",
+    "strings": "画听飞种打好",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200109,
+    "lesson": "第9组",
+    "strings": "江花叶沙草木",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200110,
+    "lesson": "第10组",
+    "strings": "头只朵棵条火",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200111,
+    "lesson": "第11组",
+    "strings": "天空世界土地",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200112,
+    "lesson": "第12组",
+    "strings": "你我他她它们",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200113,
+    "lesson": "第13组",
+    "strings": "气候风晴雨雪",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200114,
+    "lesson": "第14组",
+    "strings": "蓝黄绿色青美",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200115,
+    "lesson": "第15组",
+    "strings": "光亮明太星阳",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200116,
+    "lesson": "第16组",
+    "strings": "爷奶爸姐家母",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200117,
+    "lesson": "第17组",
+    "strings": "树果瓜枝米生",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200118,
+    "lesson": "第18组",
+    "strings": "松竹柳桃森林",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200119,
+    "lesson": "第19组",
+    "strings": "春秋冬年岁像",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200120,
+    "lesson": "第20组",
+    "strings": "同学老师习园",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200121,
+    "lesson": "第21组",
+    "strings": "又和也再就才",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200122,
+    "lesson": "第22组",
+    "strings": "河海流清池满",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200123,
+    "lesson": "第23组",
+    "strings": "欢乐高兴歌金",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200124,
+    "lesson": "第24组",
+    "strings": "跑跳行走立坐",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200125,
+    "lesson": "第25组",
+    "strings": "东西南北前后",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200126,
+    "lesson": "第26组",
+    "strings": "为什么知道会",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200127,
+    "lesson": "第27组",
+    "strings": "来去回别从向",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200128,
+    "lesson": "第28组",
+    "strings": "许多几千有没",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200129,
+    "lesson": "第29组",
+    "strings": "毛角兔禾苗面",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200130,
+    "lesson": "第30组",
+    "strings": "方圆点正台位",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200131,
+    "lesson": "第31组",
+    "strings": "用做住变把处",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200132,
+    "lesson": "第32组",
+    "strings": "这那边里总是",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200133,
+    "lesson": "第33组",
+    "strings": "着了的节成在",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200134,
+    "lesson": "第34组",
+    "strings": "进出过到开入",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200135,
+    "lesson": "第35组",
+    "strings": "捉找放玩活动",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200136,
+    "lesson": "第36组",
+    "strings": "说话叫声吹问",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200137,
+    "lesson": "第37组",
+    "strings": "最很每片分告",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200138,
+    "lesson": "第38组",
+    "strings": "孩子衣干力事",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200139,
+    "lesson": "第39组",
+    "strings": "送还给让要得",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200140,
+    "lesson": "第40组",
+    "strings": "眼足皮发巴心",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200141,
+    "lesson": "第41组",
+    "strings": "新快真全对长",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200142,
+    "lesson": "第42组",
+    "strings": "吃笑看见想奇",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200143,
+    "lesson": "第43组",
+    "strings": "书纸笔写字数",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200144,
+    "lesson": "第44组",
+    "strings": "夜晚早乌时间",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200145,
+    "lesson": "第45组",
+    "strings": "朋友伴自己答",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200146,
+    "lesson": "第46组",
+    "strings": "请原完可起带",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200147,
+    "lesson": "第47组",
+    "strings": "觉跟步石都国",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200148,
+    "lesson": "第48组",
+    "strings": "热爱城市乡村",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200149,
+    "lesson": "第49组",
+    "strings": "工厂校商场医",
+    "icon" : "lesson"
+  },
+
+  { "ID": 1200150,
+    "lesson": "第50组",
+    "strings": "作业课本题目",
+    "icon" : "lesson"
+  }
+]
